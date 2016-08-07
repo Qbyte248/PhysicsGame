@@ -8,6 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		541D0D1F1D57507E00F2E295 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D1E1D57507E00F2E295 /* main.swift */; };
+		541D0D691D57587000F2E295 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D3F1D57528400F2E295 /* Color.swift */; };
+		541D0D6A1D57587000F2E295 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D401D57528400F2E295 /* Drawable.swift */; };
+		541D0D6B1D57587000F2E295 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D411D57528400F2E295 /* Line.swift */; };
+		541D0D6C1D57587000F2E295 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D421D57528400F2E295 /* Polygon.swift */; };
+		541D0D6D1D57587000F2E295 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D431D57528400F2E295 /* Rectangle.swift */; };
+		541D0D6E1D57587000F2E295 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D441D57528400F2E295 /* Vector2D.swift */; };
+		541D0D6F1D57587000F2E295 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D461D57528400F2E295 /* Command.swift */; };
+		541D0D701D57587000F2E295 /* CommandDistributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D471D57528400F2E295 /* CommandDistributor.swift */; };
+		541D0D711D57587000F2E295 /* CommandInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D481D57528400F2E295 /* CommandInterpreter.swift */; };
+		541D0D721D57587000F2E295 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D491D57528400F2E295 /* CommandReader.swift */; };
+		541D0D731D57587000F2E295 /* CommandSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4A1D57528400F2E295 /* CommandSender.swift */; };
+		541D0D741D57587000F2E295 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4B1D57528400F2E295 /* Errors.swift */; };
+		541D0D751D57587000F2E295 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4C1D57528400F2E295 /* Helper.swift */; };
+		541D0D761D57587000F2E295 /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4D1D57528400F2E295 /* Lens.swift */; };
+		541D0D771D57587000F2E295 /* ObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4E1D57528400F2E295 /* ObjectConvertible.swift */; };
+		541D0D781D57587000F2E295 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D4F1D57528400F2E295 /* Parser.swift */; };
+		541D0D791D57587000F2E295 /* ParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D501D57528400F2E295 /* ParserTest.swift */; };
+		541D0D7A1D57587000F2E295 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D511D57528400F2E295 /* Protocol.swift */; };
+		541D0D7B1D57587000F2E295 /* TestCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D521D57528400F2E295 /* TestCommand.swift */; };
+		541D0D7C1D57587000F2E295 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D531D57528400F2E295 /* Vector.swift */; };
+		541D0D7D1D57587000F2E295 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D541D57528400F2E295 /* Wrapper.swift */; };
+		541D0D801D5769F600F2E295 /* DrawFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D7F1D5769F600F2E295 /* DrawFunctions.swift */; };
+		541D0D8A1D576D4800F2E295 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D831D576D4800F2E295 /* Item.swift */; };
+		541D0D8B1D576D4800F2E295 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D841D576D4800F2E295 /* Point.swift */; };
+		541D0D8D1D576D4800F2E295 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D861D576D4800F2E295 /* Texture.swift */; };
+		541D0D8E1D576D4800F2E295 /* TextureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D871D576D4800F2E295 /* TextureModel.swift */; };
+		541D0D8F1D576D4800F2E295 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D881D576D4800F2E295 /* World.swift */; };
+		541D0D911D576E4900F2E295 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D901D576E4900F2E295 /* Block.swift */; };
+		541D0D931D57735C00F2E295 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D921D57735C00F2E295 /* PhysicsBody.swift */; };
+		541D0D951D579E1A00F2E295 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D941D579E1A00F2E295 /* Start.swift */; };
+		541D0D971D57A45600F2E295 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D961D57A45600F2E295 /* Program.swift */; };
+		541D0D991D57C6E800F2E295 /* JavaSwiftWrapper.java in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */; };
+		541D0DBD1D57C70100F2E295 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB61D57C70100F2E295 /* main.swift */; };
+		541D0DBE1D57C70100F2E295 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB71D57C70100F2E295 /* Package.swift */; };
+		541D0DBF1D57C70100F2E295 /* SwiftJavaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +60,64 @@
 /* Begin PBXFileReference section */
 		541D0D1B1D57507E00F2E295 /* PhysicsGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhysicsGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		541D0D1E1D57507E00F2E295 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		541D0D271D57528400F2E295 /* Drawable.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Drawable.java; sourceTree = "<group>"; };
+		541D0D281D57528400F2E295 /* DrawableObject.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = DrawableObject.java; sourceTree = "<group>"; };
+		541D0D291D57528400F2E295 /* Line.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Line.java; sourceTree = "<group>"; };
+		541D0D2A1D57528400F2E295 /* MyColor.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MyColor.java; sourceTree = "<group>"; };
+		541D0D2B1D57528400F2E295 /* MyImage.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MyImage.java; sourceTree = "<group>"; };
+		541D0D2C1D57528400F2E295 /* Polygon.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Polygon.java; sourceTree = "<group>"; };
+		541D0D2D1D57528400F2E295 /* Rectangle.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Rectangle.java; sourceTree = "<group>"; };
+		541D0D2E1D57528400F2E295 /* Vector.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Vector.java; sourceTree = "<group>"; };
+		541D0D2F1D57528400F2E295 /* DrawingServer.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = DrawingServer.java; sourceTree = "<group>"; };
+		541D0D311D57528400F2E295 /* Command.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Command.java; sourceTree = "<group>"; };
+		541D0D321D57528400F2E295 /* CommandDistributor.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandDistributor.java; sourceTree = "<group>"; };
+		541D0D331D57528400F2E295 /* CommandInterpreter.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandInterpreter.java; sourceTree = "<group>"; };
+		541D0D341D57528400F2E295 /* CommandReader.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandReader.java; sourceTree = "<group>"; };
+		541D0D351D57528400F2E295 /* CommandSender.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = CommandSender.java; sourceTree = "<group>"; };
+		541D0D361D57528400F2E295 /* Helper.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Helper.java; sourceTree = "<group>"; };
+		541D0D371D57528400F2E295 /* ObjectConvertible.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ObjectConvertible.java; sourceTree = "<group>"; };
+		541D0D381D57528400F2E295 /* Parser.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Parser.java; sourceTree = "<group>"; };
+		541D0D391D57528400F2E295 /* ParserTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ParserTest.java; sourceTree = "<group>"; };
+		541D0D3A1D57528400F2E295 /* Protocol.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Protocol.java; sourceTree = "<group>"; };
+		541D0D3B1D57528400F2E295 /* TestCommand.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = TestCommand.java; sourceTree = "<group>"; };
+		541D0D3C1D57528400F2E295 /* Wrapper.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Wrapper.java; sourceTree = "<group>"; };
+		541D0D3F1D57528400F2E295 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		541D0D401D57528400F2E295 /* Drawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
+		541D0D411D57528400F2E295 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		541D0D421D57528400F2E295 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		541D0D431D57528400F2E295 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		541D0D441D57528400F2E295 /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		541D0D461D57528400F2E295 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		541D0D471D57528400F2E295 /* CommandDistributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDistributor.swift; sourceTree = "<group>"; };
+		541D0D481D57528400F2E295 /* CommandInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInterpreter.swift; sourceTree = "<group>"; };
+		541D0D491D57528400F2E295 /* CommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReader.swift; sourceTree = "<group>"; };
+		541D0D4A1D57528400F2E295 /* CommandSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandSender.swift; sourceTree = "<group>"; };
+		541D0D4B1D57528400F2E295 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		541D0D4C1D57528400F2E295 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		541D0D4D1D57528400F2E295 /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		541D0D4E1D57528400F2E295 /* ObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConvertible.swift; sourceTree = "<group>"; };
+		541D0D4F1D57528400F2E295 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		541D0D501D57528400F2E295 /* ParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTest.swift; sourceTree = "<group>"; };
+		541D0D511D57528400F2E295 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		541D0D521D57528400F2E295 /* TestCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCommand.swift; sourceTree = "<group>"; };
+		541D0D531D57528400F2E295 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		541D0D541D57528400F2E295 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		541D0D611D57557200F2E295 /* Size.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Size.java; sourceTree = "<group>"; };
+		541D0D7E1D575E2E00F2E295 /* WorkaroundStreamer.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = WorkaroundStreamer.java; sourceTree = "<group>"; };
+		541D0D7F1D5769F600F2E295 /* DrawFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawFunctions.swift; sourceTree = "<group>"; };
+		541D0D831D576D4800F2E295 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		541D0D841D576D4800F2E295 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		541D0D861D576D4800F2E295 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		541D0D871D576D4800F2E295 /* TextureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureModel.swift; sourceTree = "<group>"; };
+		541D0D881D576D4800F2E295 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		541D0D901D576E4900F2E295 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		541D0D921D57735C00F2E295 /* PhysicsBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
+		541D0D941D579E1A00F2E295 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
+		541D0D961D57A45600F2E295 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaSwiftWrapper.java; sourceTree = "<group>"; };
+		541D0DB61D57C70100F2E295 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		541D0DB71D57C70100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJavaWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +151,150 @@
 			isa = PBXGroup;
 			children = (
 				541D0D1E1D57507E00F2E295 /* main.swift */,
+				541D0D941D579E1A00F2E295 /* Start.swift */,
+				541D0D961D57A45600F2E295 /* Program.swift */,
+				541D0D7F1D5769F600F2E295 /* DrawFunctions.swift */,
+				541D0D3D1D57528400F2E295 /* Swift */,
+				541D0D251D57528400F2E295 /* Java */,
 			);
 			path = PhysicsGame;
 			sourceTree = "<group>";
 		};
+		541D0D251D57528400F2E295 /* Java */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D2F1D57528400F2E295 /* DrawingServer.java */,
+				541D0D7E1D575E2E00F2E295 /* WorkaroundStreamer.java */,
+				541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */,
+				541D0D261D57528400F2E295 /* Drawing */,
+				541D0D301D57528400F2E295 /* Helper */,
+			);
+			path = Java;
+			sourceTree = "<group>";
+		};
+		541D0D261D57528400F2E295 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D271D57528400F2E295 /* Drawable.java */,
+				541D0D281D57528400F2E295 /* DrawableObject.java */,
+				541D0D291D57528400F2E295 /* Line.java */,
+				541D0D2A1D57528400F2E295 /* MyColor.java */,
+				541D0D2B1D57528400F2E295 /* MyImage.java */,
+				541D0D2C1D57528400F2E295 /* Polygon.java */,
+				541D0D2D1D57528400F2E295 /* Rectangle.java */,
+				541D0D611D57557200F2E295 /* Size.java */,
+				541D0D2E1D57528400F2E295 /* Vector.java */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		541D0D301D57528400F2E295 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D311D57528400F2E295 /* Command.java */,
+				541D0D321D57528400F2E295 /* CommandDistributor.java */,
+				541D0D331D57528400F2E295 /* CommandInterpreter.java */,
+				541D0D341D57528400F2E295 /* CommandReader.java */,
+				541D0D351D57528400F2E295 /* CommandSender.java */,
+				541D0D361D57528400F2E295 /* Helper.java */,
+				541D0D371D57528400F2E295 /* ObjectConvertible.java */,
+				541D0D381D57528400F2E295 /* Parser.java */,
+				541D0D391D57528400F2E295 /* ParserTest.java */,
+				541D0D3A1D57528400F2E295 /* Protocol.java */,
+				541D0D3B1D57528400F2E295 /* TestCommand.java */,
+				541D0D3C1D57528400F2E295 /* Wrapper.java */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		541D0D3D1D57528400F2E295 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D9A1D57C70100F2E295 /* SwiftJavaWrapper */,
+				541D0D811D576D4800F2E295 /* World */,
+				541D0D3E1D57528400F2E295 /* Drawing */,
+				541D0D451D57528400F2E295 /* Helper */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		541D0D3E1D57528400F2E295 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D3F1D57528400F2E295 /* Color.swift */,
+				541D0D401D57528400F2E295 /* Drawable.swift */,
+				541D0D411D57528400F2E295 /* Line.swift */,
+				541D0D421D57528400F2E295 /* Polygon.swift */,
+				541D0D431D57528400F2E295 /* Rectangle.swift */,
+				541D0D441D57528400F2E295 /* Vector2D.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		541D0D451D57528400F2E295 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D461D57528400F2E295 /* Command.swift */,
+				541D0D471D57528400F2E295 /* CommandDistributor.swift */,
+				541D0D481D57528400F2E295 /* CommandInterpreter.swift */,
+				541D0D491D57528400F2E295 /* CommandReader.swift */,
+				541D0D4A1D57528400F2E295 /* CommandSender.swift */,
+				541D0D4B1D57528400F2E295 /* Errors.swift */,
+				541D0D4C1D57528400F2E295 /* Helper.swift */,
+				541D0D4D1D57528400F2E295 /* Lens.swift */,
+				541D0D4E1D57528400F2E295 /* ObjectConvertible.swift */,
+				541D0D4F1D57528400F2E295 /* Parser.swift */,
+				541D0D501D57528400F2E295 /* ParserTest.swift */,
+				541D0D511D57528400F2E295 /* Protocol.swift */,
+				541D0D521D57528400F2E295 /* TestCommand.swift */,
+				541D0D531D57528400F2E295 /* Vector.swift */,
+				541D0D541D57528400F2E295 /* Wrapper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		541D0D811D576D4800F2E295 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				541D0D831D576D4800F2E295 /* Item.swift */,
+				541D0D901D576E4900F2E295 /* Block.swift */,
+				541D0D921D57735C00F2E295 /* PhysicsBody.swift */,
+				541D0D841D576D4800F2E295 /* Point.swift */,
+				541D0D861D576D4800F2E295 /* Texture.swift */,
+				541D0D871D576D4800F2E295 /* TextureModel.swift */,
+				541D0D881D576D4800F2E295 /* World.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		541D0D9A1D57C70100F2E295 /* SwiftJavaWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				541D0DB61D57C70100F2E295 /* main.swift */,
+				541D0DB71D57C70100F2E295 /* Package.swift */,
+				541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */,
+			);
+			path = SwiftJavaWrapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		541D0D5D1D5752B900F2E295 /* DrawingServer */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) PhysicsGame/Java/$(TARGETNAME).java";
+			buildConfigurationList = 541D0D5E1D5752B900F2E295 /* Build configuration list for PBXLegacyTarget "DrawingServer" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = DrawingServer;
+			passBuildSettingsInEnvironment = 1;
+			productName = JavaPhysicsGame;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		541D0D1A1D57507E00F2E295 /* PhysicsGame */ = {
@@ -97,6 +329,11 @@
 						DevelopmentTeam = EBKJEHVQXB;
 						ProvisioningStyle = Automatic;
 					};
+					541D0D5D1D5752B900F2E295 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = EBKJEHVQXB;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 541D0D161D57507E00F2E295 /* Build configuration list for PBXProject "PhysicsGame" */;
@@ -112,6 +349,7 @@
 			projectRoot = "";
 			targets = (
 				541D0D1A1D57507E00F2E295 /* PhysicsGame */,
+				541D0D5D1D5752B900F2E295 /* DrawingServer */,
 			);
 		};
 /* End PBXProject section */
@@ -121,7 +359,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541D0D971D57A45600F2E295 /* Program.swift in Sources */,
+				541D0D731D57587000F2E295 /* CommandSender.swift in Sources */,
+				541D0DBD1D57C70100F2E295 /* main.swift in Sources */,
+				541D0D7A1D57587000F2E295 /* Protocol.swift in Sources */,
+				541D0D721D57587000F2E295 /* CommandReader.swift in Sources */,
 				541D0D1F1D57507E00F2E295 /* main.swift in Sources */,
+				541D0D711D57587000F2E295 /* CommandInterpreter.swift in Sources */,
+				541D0D8D1D576D4800F2E295 /* Texture.swift in Sources */,
+				541D0D8A1D576D4800F2E295 /* Item.swift in Sources */,
+				541D0D6D1D57587000F2E295 /* Rectangle.swift in Sources */,
+				541D0D7B1D57587000F2E295 /* TestCommand.swift in Sources */,
+				541D0D8E1D576D4800F2E295 /* TextureModel.swift in Sources */,
+				541D0D7C1D57587000F2E295 /* Vector.swift in Sources */,
+				541D0D931D57735C00F2E295 /* PhysicsBody.swift in Sources */,
+				541D0DBF1D57C70100F2E295 /* SwiftJavaWrapper.swift in Sources */,
+				541D0D751D57587000F2E295 /* Helper.swift in Sources */,
+				541D0D761D57587000F2E295 /* Lens.swift in Sources */,
+				541D0D6F1D57587000F2E295 /* Command.swift in Sources */,
+				541D0D771D57587000F2E295 /* ObjectConvertible.swift in Sources */,
+				541D0D911D576E4900F2E295 /* Block.swift in Sources */,
+				541D0D991D57C6E800F2E295 /* JavaSwiftWrapper.java in Sources */,
+				541D0D801D5769F600F2E295 /* DrawFunctions.swift in Sources */,
+				541D0D6C1D57587000F2E295 /* Polygon.swift in Sources */,
+				541D0D691D57587000F2E295 /* Color.swift in Sources */,
+				541D0D6B1D57587000F2E295 /* Line.swift in Sources */,
+				541D0D741D57587000F2E295 /* Errors.swift in Sources */,
+				541D0D7D1D57587000F2E295 /* Wrapper.swift in Sources */,
+				541D0D8B1D576D4800F2E295 /* Point.swift in Sources */,
+				541D0D781D57587000F2E295 /* Parser.swift in Sources */,
+				541D0D951D579E1A00F2E295 /* Start.swift in Sources */,
+				541D0D8F1D576D4800F2E295 /* World.swift in Sources */,
+				541D0DBE1D57C70100F2E295 /* Package.swift in Sources */,
+				541D0D701D57587000F2E295 /* CommandDistributor.swift in Sources */,
+				541D0D791D57587000F2E295 /* ParserTest.swift in Sources */,
+				541D0D6E1D57587000F2E295 /* Vector2D.swift in Sources */,
+				541D0D6A1D57587000F2E295 /* Drawable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +507,31 @@
 			};
 			name = Release;
 		};
+		541D0D5F1D5752B900F2E295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		541D0D601D5752B900F2E295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EBKJEHVQXB;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -251,6 +549,14 @@
 			buildConfigurations = (
 				541D0D231D57507E00F2E295 /* Debug */,
 				541D0D241D57507E00F2E295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		541D0D5E1D5752B900F2E295 /* Build configuration list for PBXLegacyTarget "DrawingServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541D0D5F1D5752B900F2E295 /* Debug */,
+				541D0D601D5752B900F2E295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
