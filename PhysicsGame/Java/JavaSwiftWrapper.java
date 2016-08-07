@@ -12,11 +12,11 @@ public class SwiftNetworkLib {
 	}
 
 	public void send(String packet) {
-		out.println(packet);
+		out.print(packet);
 	}
 
 	public void senErr(String packet) {
-		err.println(packet);
+		err.print(packet);
 	}
 
 }

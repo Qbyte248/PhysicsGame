@@ -7,6 +7,7 @@ import java.net.Socket;
 /**
  * Reads from a socket and passes interpreted Commands to one CommandInterpreter
  */
+/*
 public class CommandReader {
 
 	/**
@@ -18,11 +19,11 @@ public class CommandReader {
 	 * @throws IOException
 	 *             since opening an InputStream and reading can fail
 	 */
-	public static void readFromSocket(Socket socket, CommandInterpreter commandInterpreter)
+	/*public static void readFromSocket(Socket socket, CommandInterpreter commandInterpreter)
 			throws IOException, IllegalArgumentException {
 
 		// can throw IOException
-		InputStream inputStream = socket.getInputStream();
+		InputStream inputStream = System.in;//socket.getInputStream();
 
 		String commandString = "";
 		int c;
@@ -39,5 +40,5 @@ public class CommandReader {
 			}
 			
 		}
-	}
-}
+	}*/
+//}

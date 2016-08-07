@@ -27,7 +27,9 @@ struct IOException: Error {
 }
 
 import Foundation
-public typealias OutputStream = NSOutputStream
+//public typealias OutputStream = NSOutputStream
+public typealias OutputStream = SwiftJavaWrapper
+public typealias InputStream = SwiftJavaWrapper
 
 #if os(Linux)
 	public func arc4random() -> Int {

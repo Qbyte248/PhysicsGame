@@ -12,7 +12,7 @@ import java.util.HashMap;
  */
 public class Command {
 	
-	public static final String endDelimiter = "%%%%";
+	public static final String endDelimiter = "%%%%\n";
 	
 	/**
 	 * @param string which gets checked

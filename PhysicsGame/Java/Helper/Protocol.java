@@ -24,6 +24,10 @@ public final class Protocol {
 		public static final String run = "run";
 		
 	}
+	
+	public final class Server {
+		public static final String mousePosition = "mousePosition";
+	}
 
 	
 	public final class Key {
@@ -37,9 +41,6 @@ public final class Protocol {
 		
 		public static final String always = "always";
 		
-		
-		public static final String world = "world";
-		
-		public static final String frameTime = "frameTime";
+		public static final String mousePosition = "mousePosition";
 	}
 }

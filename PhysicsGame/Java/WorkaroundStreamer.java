@@ -7,13 +7,13 @@ import java.io.OutputStream;
 class WorkaroundStreamer {
 	
 	public static void main(String[] args) throws IOException, InterruptedException {
-		System.out.println("start workaround");
+		//System.out.println("start workaround");
 		
 		
 		
 		//try {
 			
-			System.out.println(args[0]);
+			//System.out.println(args[0]);
 			Thread.sleep(1000);
 			
 			Socket socket = new Socket("localhost", 1234);

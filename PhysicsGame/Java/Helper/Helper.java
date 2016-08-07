@@ -76,7 +76,7 @@ public class Helper {
 	 */
 	public static void messageIfNull(String message, Object... objects) {
 		if (areAllNotNull(objects) != -1) {
-			System.out.println(message);
+			System.err.println(message);
 		}
 	}
 	
@@ -224,7 +224,7 @@ public class Helper {
      * @return converted String in UTF-8
      */
     public static String convertToUTF8(String string) {
-        System.out.println("i'm in");
+        //System.out.println("i'm in");
         try {
             return new String(string.getBytes("UTF-16"), "UTF-16");
         } catch (java.io.UnsupportedEncodingException e) {

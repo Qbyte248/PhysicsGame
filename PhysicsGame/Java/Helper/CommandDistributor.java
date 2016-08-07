@@ -62,6 +62,8 @@ public class CommandDistributor extends Thread {
 			// !!! can throw IOException
 			while ((c = inputStream.read()) != -1) {
 				
+				//System.out.print("Character: " + (char)c);
+				
 				if (shouldStop) {
 					// stop thread
 					return;

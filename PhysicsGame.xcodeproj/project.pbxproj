@@ -40,9 +40,8 @@
 		541D0D951D579E1A00F2E295 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D941D579E1A00F2E295 /* Start.swift */; };
 		541D0D971D57A45600F2E295 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D961D57A45600F2E295 /* Program.swift */; };
 		541D0D991D57C6E800F2E295 /* JavaSwiftWrapper.java in Sources */ = {isa = PBXBuildFile; fileRef = 541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */; };
-		541D0DBD1D57C70100F2E295 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB61D57C70100F2E295 /* main.swift */; };
-		541D0DBE1D57C70100F2E295 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB71D57C70100F2E295 /* Package.swift */; };
 		541D0DBF1D57C70100F2E295 /* SwiftJavaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */; };
+		541D0DC11D57E69100F2E295 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D0DC01D57E69100F2E295 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,9 +114,8 @@
 		541D0D941D579E1A00F2E295 /* Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 		541D0D961D57A45600F2E295 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaSwiftWrapper.java; sourceTree = "<group>"; };
-		541D0DB61D57C70100F2E295 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		541D0DB71D57C70100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJavaWrapper.swift; sourceTree = "<group>"; };
+		541D0DC01D57E69100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				541D0D1E1D57507E00F2E295 /* main.swift */,
+				541D0DC01D57E69100F2E295 /* Package.swift */,
 				541D0D941D579E1A00F2E295 /* Start.swift */,
 				541D0D961D57A45600F2E295 /* Program.swift */,
 				541D0D7F1D5769F600F2E295 /* DrawFunctions.swift */,
@@ -234,12 +233,12 @@
 		541D0D451D57528400F2E295 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				541D0D4B1D57528400F2E295 /* Errors.swift */,
 				541D0D461D57528400F2E295 /* Command.swift */,
 				541D0D471D57528400F2E295 /* CommandDistributor.swift */,
 				541D0D481D57528400F2E295 /* CommandInterpreter.swift */,
 				541D0D491D57528400F2E295 /* CommandReader.swift */,
 				541D0D4A1D57528400F2E295 /* CommandSender.swift */,
-				541D0D4B1D57528400F2E295 /* Errors.swift */,
 				541D0D4C1D57528400F2E295 /* Helper.swift */,
 				541D0D4D1D57528400F2E295 /* Lens.swift */,
 				541D0D4E1D57528400F2E295 /* ObjectConvertible.swift */,
@@ -270,8 +269,6 @@
 		541D0D9A1D57C70100F2E295 /* SwiftJavaWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				541D0DB61D57C70100F2E295 /* main.swift */,
-				541D0DB71D57C70100F2E295 /* Package.swift */,
 				541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */,
 			);
 			path = SwiftJavaWrapper;
@@ -361,7 +358,6 @@
 			files = (
 				541D0D971D57A45600F2E295 /* Program.swift in Sources */,
 				541D0D731D57587000F2E295 /* CommandSender.swift in Sources */,
-				541D0DBD1D57C70100F2E295 /* main.swift in Sources */,
 				541D0D7A1D57587000F2E295 /* Protocol.swift in Sources */,
 				541D0D721D57587000F2E295 /* CommandReader.swift in Sources */,
 				541D0D1F1D57507E00F2E295 /* main.swift in Sources */,
@@ -390,8 +386,8 @@
 				541D0D781D57587000F2E295 /* Parser.swift in Sources */,
 				541D0D951D579E1A00F2E295 /* Start.swift in Sources */,
 				541D0D8F1D576D4800F2E295 /* World.swift in Sources */,
-				541D0DBE1D57C70100F2E295 /* Package.swift in Sources */,
 				541D0D701D57587000F2E295 /* CommandDistributor.swift in Sources */,
+				541D0DC11D57E69100F2E295 /* Package.swift in Sources */,
 				541D0D791D57587000F2E295 /* ParserTest.swift in Sources */,
 				541D0D6E1D57587000F2E295 /* Vector2D.swift in Sources */,
 				541D0D6A1D57587000F2E295 /* Drawable.swift in Sources */,

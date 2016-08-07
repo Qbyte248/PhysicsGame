@@ -8,7 +8,7 @@ import Foundation
  */
 public struct Command {
 	
-	public static let endDelimiter = "%%%%";
+	public static let endDelimiter = "%%%%\n";
 	
 	/**
 	 * @param string which gets checked

@@ -23,10 +23,11 @@ import javax.swing.JPanel;
 
 import java.awt.geom.Line2D;
 import java.awt.Graphics2D;
+import java.awt.event.*;
 
-public class DrawingServer extends JComponent implements CommandInterpreter {
+public class DrawingServer extends JComponent implements CommandInterpreter, MouseMotionListener {
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		//System.out.println("Hello World");
 		
 		
 		Polygon pol = new Polygon();
@@ -36,22 +37,22 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 		try {
 			// !!! can throw IOExeption
 			DrawingServer server = new DrawingServer();
-			while (true) {
+			//while (true) {
 				try {
 					// !!! can throw IOExeption
 					server.accept();
 				} catch (IOException e) {
-					System.out.println("could not connect to client");
+					System.err.println("could not connect to client");
 				}
-			}
+			//}
 		} catch (IOException e) {
-			System.out.println("Exception occured");
+			System.err.println("Exception occured");
 		}
 	}
 	
 	ServerSocket serverSocket;
 	// FIXME: probably only one distributor allowed
-	ArrayList<CommandDistributor> commandDistributors = new ArrayList<>();
+	CommandDistributor commandDistributor;
 	
 	ArrayList<Drawable> drawables = new ArrayList<>();
 	boolean alwaysRepaint = false;
@@ -76,12 +77,37 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 				repaint();
 			}
 		});
+		
+		testFrame.addMouseMotionListener(this);
+		
 		buttonsPanel.add(newLineButton);
 		buttonsPanel.add(clearButton);
 		testFrame.getContentPane().add(buttonsPanel, BorderLayout.SOUTH);
 		
 		testFrame.pack();
 		testFrame.setVisible(true);
+	}
+	
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		try {
+			Command command = new Command(Protocol.Server.mousePosition);
+			command.addParameter(Protocol.Key.mousePosition,
+								 new Vector(e.getX(), e.getY()).convertToString());
+			
+			command.sendWithOutputStream(System.out);
+		} catch (Exception ejkdshfksdjkj) {}
+		
+	}
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		try {
+			Command command = new Command(Protocol.Server.mousePosition);
+			command.addParameter(Protocol.Key.mousePosition,
+								 new Vector(e.getX(), e.getY()).convertToString());
+			
+			command.sendWithOutputStream(System.out);
+		} catch (Exception ekjkjhjkh) {}
 	}
 	
 	@Override
@@ -131,22 +157,22 @@ public class DrawingServer extends JComponent implements CommandInterpreter {
 		}
 		
 		long endTime = System.currentTimeMillis();
-		System.out.println(endTime - startTime);
+		//System.out.println(endTime - startTime);
 		
 	}
 	
 	public void accept() throws IOException {
-		System.out.println("about to connect");
-		System.out.println(commandDistributors.size());
+		System.err.println("about to connect");
+		//System.out.println(commandDistributors.size());
 		
 		// !!! can throw
-		Socket clientSocket = serverSocket.accept();
+		//Socket clientSocket = serverSocket.accept();
 		
-		System.out.println("connected");
+		//System.out.println("connected");
 		
-		CommandDistributor commandDistributor = new CommandDistributor(clientSocket.getInputStream());
+		commandDistributor = new CommandDistributor(System.in);//clientSocket.getInputStream());
 		commandDistributor.addCommandInterpreter(this);
-		commandDistributors.add(commandDistributor);
+		//commandDistributors.add(commandDistributor);
 	}
 	
 	// --- CommandInterpreter

@@ -1,6 +1,7 @@
 
 import Foundation
 
+/*
 extension InputStream {
 	func read() -> UInt8? {
 		var buffer = [UInt8]()
@@ -9,7 +10,7 @@ extension InputStream {
 		}
 		return buffer[0]
 	}
-}
+}*/
 
 /**
 * Distributes Commands from an InputStream to CommandInterpreters
@@ -35,7 +36,9 @@ public class CommandDistributor {
 	}
 	
 	public func start() {
-		DispatchQueue.main.async {
+		print("ruuuuuuuuun")
+		
+		DispatchQueue.global().async {
 			self.run()
 		}
 	}
@@ -74,26 +77,29 @@ public class CommandDistributor {
 	public func run() {
 		
 		var commandString = "";
+		print("started command interpreter")
 		
 		// !!! can throw IOException
-		while let c = inputStream.read() {
+		while let c = inputStream.readChar() {
+			
+			//print(c, terminator: "")
 			
 			// execute in main.sync
-			DispatchQueue.main.sync {
+			DispatchQueue.global().sync {
 				
-				if (shouldStop) {
+				if (self.shouldStop) {
 					// stop thread
 					return;
 				}
 				
-				
-				commandString.append(String(UnicodeScalar(c)));
+				commandString.append(c)
+				//commandString.append(String(UnicodeScalar(c)));
 				
 				// sort out commandInterpreters which don't read commands
 				var i = 0
-				while i < commandInterpreters.count {
-					if (commandInterpreters[i].finishedInterpretingCommands()) {
-						commandInterpreters.remove(at: i);
+				while i < self.commandInterpreters.count {
+					if (self.commandInterpreters[i].finishedInterpretingCommands()) {
+						self.commandInterpreters.remove(at: i);
 						i -= 1
 					}
 					i += 1

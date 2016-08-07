@@ -20,7 +20,7 @@ public enum Protocol {
 		
 	}
 	
-	public enum Server {
+	public struct Server {
 		public static let mousePosition = "mousePosition"
 	}
 

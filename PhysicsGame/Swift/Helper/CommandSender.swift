@@ -14,7 +14,8 @@ class CommandSender {
 	static func sendCommandWithOutputStream(_ command: Command, _ outputStream: OutputStream) throws {
 		// FIXME: this could not work!!!!
 		let string = command.convertToString()
-		outputStream.write(string, maxLength: string.utf8.count)
+		outputStream.write(string: string)
+		//outputStream.write(string, maxLength: string.utf8.count)
 		//outputStream.write(command.convertToString().getBytes("ISO-8859-1"));
 	}
 	

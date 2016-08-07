@@ -15,7 +15,7 @@ class CommandSender {
 	 * @throws IOException if it could not write to output stream
 	 */
 	static void sendCommandWithOutputStream(Command command, OutputStream outputStream) throws IOException {
-		outputStream.write(command.convertToString().getBytes("ISO-8859-1"));
+		/*outputStream*/System.out.write(command.convertToString().getBytes());//"ISO-8859-1"));
 	}
 	
 }

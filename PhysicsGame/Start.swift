@@ -56,3 +56,8 @@ func run() {
 	world.position.x = 300 - item.position.x
 	print(world.items[0].velocity)
 }
+
+
+func mouseMoved(position: Vector2D) {
+	print("mouse moved !!!!!!!!!!!!")
+}
