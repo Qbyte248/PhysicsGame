@@ -58,7 +58,7 @@
 
 /* Begin PBXFileReference section */
 		541D0D1B1D57507E00F2E295 /* PhysicsGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PhysicsGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		541D0D1E1D57507E00F2E295 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		541D0D1E1D57507E00F2E295 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
 		541D0D271D57528400F2E295 /* Drawable.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Drawable.java; sourceTree = "<group>"; };
 		541D0D281D57528400F2E295 /* DrawableObject.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = DrawableObject.java; sourceTree = "<group>"; };
 		541D0D291D57528400F2E295 /* Line.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Line.java; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		541D0D961D57A45600F2E295 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaSwiftWrapper.java; sourceTree = "<group>"; };
 		541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJavaWrapper.swift; sourceTree = "<group>"; };
-		541D0DC01D57E69100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		541D0DC01D57E69100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,6 +547,7 @@
 				541D0D241D57507E00F2E295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		541D0D5E1D5752B900F2E295 /* Build configuration list for PBXLegacyTarget "DrawingServer" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +556,7 @@
 				541D0D601D5752B900F2E295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
