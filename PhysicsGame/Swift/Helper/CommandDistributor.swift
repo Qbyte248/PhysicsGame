@@ -38,9 +38,9 @@ public class CommandDistributor {
 	public func start() {
 		print("ruuuuuuuuun")
 		
-		DispatchQueue.global().async {
+		//DispatchQueue.global().async {
 			self.run()
-		}
+		//}
 	}
 	
 	/**
@@ -85,7 +85,7 @@ public class CommandDistributor {
 			//print(c, terminator: "")
 			
 			// execute in main.sync
-			DispatchQueue.global().sync {
+			//DispatchQueue.global().sync {
 				
 				if (self.shouldStop) {
 					// stop thread
@@ -123,18 +123,18 @@ public class CommandDistributor {
 						commandString = ""
 					}
 					
-				}
+				//}
 			}
 		}
 		
-		DispatchQueue.main.sync {
+		//DispatchQueue.main.sync {
 			
 			commandInterpreters.forEach{
 				$0.willFinishInterpretingCommands();
 			}
 			
 			commandInterpreters.removeAll()
-		}
+		//}
 	}
 	
 }
