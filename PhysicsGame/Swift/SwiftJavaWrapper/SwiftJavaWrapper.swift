@@ -12,7 +12,7 @@ public class SwiftJavaWrapper {
 		shell(args: "killall", "java")
 		let args = ["java", "-cp", pathToWorkingDirectory, "PhysicsGame/Java/DrawingServer"]
 		task.launchPath = "/usr/bin/env"
-		task.arguments = args//["java", "-jar", pathToJar]
+		task.arguments = args//["java", "-jar", pathToWorkingDirectory + "PhysicsGame/Java/GUI-3.jar"]
 		task.standardInput = input
 		task.standardOutput = output
 		task.standardError = err

@@ -116,6 +116,8 @@
 		541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaSwiftWrapper.java; sourceTree = "<group>"; };
 		541D0DB81D57C70100F2E295 /* SwiftJavaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJavaWrapper.swift; sourceTree = "<group>"; };
 		541D0DC01D57E69100F2E295 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		5462B8F71D59280C00318AB2 /* GUI.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = GUI.jar; sourceTree = "<group>"; };
+		5462B8F81D592A9F00318AB2 /* GUI-3.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "GUI-3.jar"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,8 @@
 		541D0D251D57528400F2E295 /* Java */ = {
 			isa = PBXGroup;
 			children = (
+				5462B8F71D59280C00318AB2 /* GUI.jar */,
+				5462B8F81D592A9F00318AB2 /* GUI-3.jar */,
 				541D0D2F1D57528400F2E295 /* DrawingServer.java */,
 				541D0D7E1D575E2E00F2E295 /* WorkaroundStreamer.java */,
 				541D0D981D57C6E800F2E295 /* JavaSwiftWrapper.java */,

@@ -76,7 +76,7 @@ public class CommandDistributor {
 	
 	public func run() {
 		
-		var commandString = "";
+		var commandString = ""
 		print("started command interpreter")
 		
 		// !!! can throw IOException
@@ -124,16 +124,17 @@ public class CommandDistributor {
 					}
 					
 				//}
-			}
+			//}
 		}
 		
 		//DispatchQueue.main.sync {
-			
+			/*
 			commandInterpreters.forEach{
 				$0.willFinishInterpretingCommands();
 			}
 			
 			commandInterpreters.removeAll()
+			*/
 		//}
 	}
 	

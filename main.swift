@@ -17,6 +17,7 @@ func shell(_ launchPath: String = "/usr/bin/env", args: String...) {
 	task.launch()
 	task.waitUntilExit()
 }
+
 /*
 
 shell(args: "killall", "java")

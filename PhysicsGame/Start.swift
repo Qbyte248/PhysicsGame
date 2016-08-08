@@ -12,6 +12,7 @@ import Foundation
 var item = Item(position: Point(x: 20, y: 100))
 
 func setup() {
+	/*
 	var texture = Texture()
 	texture.append(.color(Color(red: 0, green: 1, blue: 0, alpha: 1)))
 	texture.append(.rectangle(Rectangle(0, 0, 100, 200)))
@@ -48,13 +49,74 @@ func setup() {
 	
 	item.velocity.x = 100
 	item.velocity.y = 100
+	
+	var polygon = Polygon()
+	polygon.append(Vector2D(30, 40))
+	
+	texture.append(.polygon(polygon))*/
+	
+	// ---------
+	
+	var texture = Texture()
+	
+	var color = Color(red: 1, green: 0, blue: 0, alpha: 1)
+	texture.append(.color(color))
+	
+	/*var rectangle = Rectangle(origin: Vector2D(40, 70),
+	size: Size(100, 200))*/
+	var rectangle = Rectangle(0, 0, 100, 200)
+	texture.append(.rectangle(rectangle))
+	
+	
+	color = Color(red: 1, green: 1, blue: 0, alpha: 1)
+	texture.append(.color(color))
+	rectangle = Rectangle(0, 0, 100, 200)
+	texture.append(.rectangle(Rectangle(10, 200, 50, 50)))
+	
+	color = Color(red: 0, green: 1, blue: 1, alpha: 1)
+	texture.append(.color(color))
+	texture.append(.rectangle(Rectangle(10, 200 + 20, 10, 10)))
+	
+	color = Color(red: 0, green: 1, blue: 1, alpha: 1)
+	texture.append(.color(color))
+	texture.append(.rectangle(Rectangle(10 + 40, 200 + 20, 10, 10)))
+	
+	color = Color(red: 0, green: 1, blue: 0, alpha: 1)
+	texture.append(.color(color))
+	
+	var polygon = Polygon()
+	polygon.append(Vector2D(30, 40))
+	polygon.append(Vector2D(50, 60))
+	polygon.append(Vector2D(100, 40))
+	polygon.append(Vector2D(30, 20))
+	polygon.move(Vector2D(-20, 150))
+	texture.append(.polygon(polygon))
+	
+	
+	texture.append(.color(Color(red: 0, green: 0, blue: 0, alpha: 1)))
+	texture.append(.rectangle(Rectangle(0, 0, 10, 10)))
+	
+	itemX.texture = texture
+	
+	itemX.setPhysicsBody(relativePosition: Point(x: 0, y: 0),
+	                     size: Size(100, 250),
+	                     mass: 1)
+
+	itemX.velocity.x = 10
+	world.addItem(itemX)
+	
+	var floor = Block(position: Point(x: 0, y: 0),
+	                  size: Size(1000, 20),
+	                  color: Color(red: 1, green: 0, blue: 1, alpha: 1))
+	world.addBlock(floor)
 }
 
+var itemX = Item(position: Point(x: 100, y: 100))
 
 func run() {
 	
-	world.position.x = 300 - item.position.x
-	print(world.items[0].velocity)
+	//world.position.x = 300 - item.position.x
+	print(world.items[0].position)
 }
 
 
