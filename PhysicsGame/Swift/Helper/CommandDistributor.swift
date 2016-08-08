@@ -124,7 +124,7 @@ public class CommandDistributor {
 					}
 					
 				//}
-			//}
+			}
 		}
 		
 		//DispatchQueue.main.sync {
